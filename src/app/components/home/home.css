@@ -1,0 +1,46 @@
+.container {
+  height: 100vh;
+  background-color: #ffd6e0;
+  position: relative;
+}
+.favorite-names {
+  font-family: 'Fredoka', sans-serif;
+
+  padding: 10px;
+  background-color: #fff8e7;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 24px;
+  border: 1px solid #000000;
+  font-size: 16px;
+  position: absolute;
+  right: 0;
+  transition: 0.3s ease;
+}
+.favorite-names:hover {
+  transform: scale(1.05);
+}
+.main-cards {
+  height: calc(100vh - 21.6px);
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+.main-card {
+  background-color: #fff0f5;
+
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.main-card:hover {
+  transform: translateY(-3px) scale(1.05);
+  background-color: #fff8e7;
+}
+.main-card h2 {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
+}
