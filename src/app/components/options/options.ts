@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-options',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './options.html',
   styleUrl: './options.css',
 })
-export class Options {
-
-}
+export class Options {}
