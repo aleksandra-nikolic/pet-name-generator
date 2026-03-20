@@ -2,30 +2,66 @@
   <div class="container">
     <h2>Gender</h2>
     <section class="form-gender">
-      <input type="radio" name="gender" value="male" id="male" />
+      <input (change)="selectGender('male')" type="radio" name="gender" value="male" id="male" />
       <label for="male">Male</label>
 
-      <input type="radio" name="gender" value="female" id="female" />
+      <input
+        (change)="selectGender('female')"
+        type="radio"
+        name="gender"
+        value="female"
+        id="female"
+      />
       <label for="female">Female</label>
 
-      <input type="radio" name="gender" value="both" id="both" />
+      <input (change)="selectGender('both')" type="radio" name="gender" value="both" id="both" />
       <label for="both">Both</label>
     </section>
     <h2>Style</h2>
     <section class="form-style">
-      <input type="checkbox" name="style" value="funny" id="funny" />
+      <input
+        (change)="selectStyle('funny', $event.target.checked)"
+        type="checkbox"
+        name="style"
+        value="funny"
+        id="funny"
+      />
       <label for="funny">Funny</label>
 
-      <input type="checkbox" name="style" value="cute" id="cute" />
+      <input
+        (change)="selectStyle('cute', $event.target.checked)"
+        type="checkbox"
+        name="style"
+        value="cute"
+        id="cute"
+      />
       <label for="cute">Cute</label>
 
-      <input type="checkbox" name="style" value="classic" id="classic" />
+      <input
+        (change)="selectStyle('classic', $event.target.checked)"
+        type="checkbox"
+        name="style"
+        value="classic"
+        id="classic"
+      />
       <label for="classic">Classic</label>
 
-      <input type="checkbox" name="style" value="wild" id="wild" />
+      <input
+        (change)="selectStyle('wild', $event.target.checked)"
+        type="checkbox"
+        name="style"
+        value="wild"
+        id="wild"
+      />
       <label for="wild">Wild</label>
 
-      <input type="checkbox" name="style" value="balkan" id="balkan" />
+      <input
+        (change)="selectStyle('balkan', $event.target.checked)"
+        type="checkbox"
+        name="style"
+        value="balkan"
+        id="balkan"
+      />
       <label for="balkan">Balkan</label>
     </section>
     <button class="generate-btn" type="submit" routerLink="/results">Generate name</button>

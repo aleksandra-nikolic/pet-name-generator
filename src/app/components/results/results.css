@@ -1,0 +1,88 @@
+.wrapper {
+  height: 100dvh;
+  background-color: #f8fab4;
+}
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.container h1 {
+  font-size: 88px;
+  font-family: 'Fredoka';
+  font-weight: bolder;
+  color: #eda35a;
+}
+.addBtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.addBtn button {
+  font-family: 'Fredoka', sans-serif;
+
+  padding: 10px;
+  background-color: #fff8e7;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 24px;
+  border: 1px solid #000000;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+.addBtn button:hover {
+  transform: scale(1.05);
+}
+.addBtn button.clicked {
+  background-color: #a85400;
+  color: rgb(255, 255, 255);
+  border: none;
+}
+.againBtns {
+  position: absolute;
+  bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  align-items: center;
+}
+.restart img {
+  width: 30px;
+  height: 30px;
+}
+.restart {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid #fae98a;
+  padding: 0;
+  cursor: pointer;
+  background-color: #fff8e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+.restart:hover {
+  transform: scale(1.05);
+}
+.start-again {
+  font-family: 'Fredoka', sans-serif;
+  color: white;
+  padding: 16px;
+
+  background-color: #eda35a;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 24px;
+  border: 1px solid #eda35a;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+.start-again:hover {
+  transform: scale(1.05);
+}
