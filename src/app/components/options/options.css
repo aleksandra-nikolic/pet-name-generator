@@ -70,3 +70,8 @@ input[type='checkbox']:checked + label {
 .generate-btn:active {
   transform: scale(0.95);
 }
+.generate-btn:disabled {
+  background: transparent;
+  color: #a6a6a6;
+  border: 1px solid #a6a6a6;
+}

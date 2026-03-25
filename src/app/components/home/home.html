@@ -1,5 +1,10 @@
 <div class="container">
-  <button class="favorite-names" routerLink="/list-names">My Favorite Names</button>
+  @if (isModalOpen) {
+    <app-list-names (closeModal)="closeModal()"></app-list-names>
+  }
+  <button (click)="openModal()" class="favorite-names" routerLink="/list-names">
+    My Favorite Names
+  </button>
   <main class="main-cards">
     <button type="button" class="main-card" routerLink="/options">
       <img src="images/cat.png" alt="" />

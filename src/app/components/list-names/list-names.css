@@ -1,0 +1,61 @@
+.wrapper {
+  background-color: #604652;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  padding: 20px;
+  border-radius: 20px;
+}
+.deleteBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.deleteBtn img {
+  width: 32px;
+}
+.name-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  padding: 21px;
+  gap: 21px;
+}
+.name-card h2 {
+  color: #e6b2ba;
+  font-size: 56px;
+}
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.modal {
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+}
+.closeBtn {
+  padding: 16px;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #242424;
+  font-weight: 600;
+}

@@ -64,6 +64,8 @@
       />
       <label for="balkan">Balkan</label>
     </section>
-    <button class="generate-btn" type="submit" routerLink="/results">Generate name</button>
+    <button class="generate-btn" type="submit" routerLink="/results" [disabled]="!isFormValid">
+      Generate name
+    </button>
   </div>
 </div>

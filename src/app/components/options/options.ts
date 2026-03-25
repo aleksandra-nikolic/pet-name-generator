@@ -26,6 +26,5 @@ export class Options {
     } else {
       this.selectedStyles = this.selectedStyles.filter((s) => s !== style);
     }
-    console.log(this.selectedStyles);
   }
 }
