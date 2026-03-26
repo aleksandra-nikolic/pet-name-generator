@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { OptionsService } from '../../services/options.service';
 
 @Component({
   selector: 'app-options',
@@ -8,23 +9,25 @@ import { RouterLink } from '@angular/router';
   styleUrl: './options.css',
 })
 export class Options {
-  selectedGender: string = '';
-  selectedStyles: string[] = [];
+  constructor(private optionsService: OptionsService) {}
 
   get isFormValid(): boolean {
-    return this.selectedGender !== '' && this.selectedStyles.length > 0;
+    return (
+      this.optionsService.selectedGender !== '' && this.optionsService.selectedStyles.length > 0
+    );
   }
 
   selectGender(gender: string): void {
-    this.selectedGender = gender;
-    console.log(this.selectedGender);
+    this.optionsService.selectedGender = gender;
   }
 
   selectStyle(style: string, checked: boolean): void {
     if (checked) {
-      this.selectedStyles.push(style);
+      this.optionsService.selectedStyles.push(style);
     } else {
-      this.selectedStyles = this.selectedStyles.filter((s) => s !== style);
+      this.optionsService.selectedStyles = this.optionsService.selectedStyles.filter(
+        (s) => s !== style,
+      );
     }
   }
 }

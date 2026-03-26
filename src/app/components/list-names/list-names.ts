@@ -8,8 +8,12 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class ListNames {
   @Output() closeModal = new EventEmitter();
-
+  favoriteNames: string[] = [];
   close() {
     this.closeModal.emit();
+  }
+  ngOnInit() {
+    const data = localStorage.getItem('favoriteNames');
+    this.favoriteNames = data ? JSON.parse(data) : [];
   }
 }

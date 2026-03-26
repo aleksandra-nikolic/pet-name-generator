@@ -1,10 +1,14 @@
 <div (click)="close()" class="overlay"></div>
 <div class="wrapper">
-  <button (click)="close()" class="closeBtn">Close</button>
-  <section class="name-card">
-    <h2>sana</h2>
-    <button class="deleteBtn">
-      <img src="images/deleteIcon.svg" alt="" />
-    </button>
-  </section>
+  <button (click)="close()" class="closeBtn">
+    <img src="images/close-modal.png" alt="" />
+  </button>
+  @for (name of favoriteNames; track $index) {
+    <section class="name-card">
+      <h2>{{ name }}</h2>
+      <button class="deleteBtn">
+        <img src="images/delete-name.png" alt="" />
+      </button>
+    </section>
+  }
 </div>

@@ -10,14 +10,13 @@ import { ListNames } from '../list-names/list-names';
 })
 export class Home {
   isModalOpen = false;
-  // isModalClosed = false;
+
   openModal() {
     this.isModalOpen = true;
+    document.body.style.overflow = 'hidden';
   }
   closeModal() {
     this.isModalOpen = false;
+    document.body.style.overflow = '';
   }
-  // closeButton() {
-  //   this.isModalClosed = true;
-  // }
 }

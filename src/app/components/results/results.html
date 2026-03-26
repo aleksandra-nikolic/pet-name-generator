@@ -1,15 +1,19 @@
 <div class="wrapper">
   <div class="container">
     <section class="addBtn">
-      <button (click)="onClick()" [ngClass]="{ clicked: isClicked }" type="button">
+      <button
+        (click)="onClick(); addToFavorites()"
+        [ngClass]="{ clicked: isClicked }"
+        type="button"
+      >
         Add to Favorites
       </button>
     </section>
 
-    <h1>NAME</h1>
+    <h1>{{ randomName }}</h1>
 
     <section class="againBtns">
-      <button class="restart">
+      <button (click)="getRandomName()" class="restart">
         <img src="images/refresh.png" alt="" />
       </button>
       <button class="start-again" routerLink="/home">Back to Home</button>
