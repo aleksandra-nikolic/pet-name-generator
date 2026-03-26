@@ -17,12 +17,14 @@ export class Results {
   randomName: string = '';
   allNames: string[] = [];
   favoritesNames: string[] = [];
+
   isClicked = false;
   onClick() {
     this.isClicked = true;
   }
 
   getRandomName() {
+    this.isClicked = false;
     this.allNames = [];
     const gender = this.optionsService.selectedGender as keyof GenderPet;
     this.optionsService.selectedStyles.forEach((style) => {

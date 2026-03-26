@@ -86,3 +86,17 @@
 .start-again:hover {
   transform: scale(1.05);
 }
+@keyframes nameAppear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.name {
+  animation: nameAppear 0.4s ease;
+}

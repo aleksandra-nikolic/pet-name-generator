@@ -16,4 +16,10 @@ export class ListNames {
     const data = localStorage.getItem('favoriteNames');
     this.favoriteNames = data ? JSON.parse(data) : [];
   }
+
+  deleteName(name: string) {
+    const index = this.favoriteNames.findIndex((n) => n === name);
+    this.favoriteNames.splice(index, 1);
+    localStorage.setItem('favoriteNames', JSON.stringify(this.favoriteNames));
+  }
 }

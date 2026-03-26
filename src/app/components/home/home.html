@@ -1,30 +1,34 @@
-<div class="container">
-  @if (isModalOpen) {
-    <app-list-names (closeModal)="closeModal()"></app-list-names>
-  }
-  <button (click)="openModal()" class="favorite-names" routerLink="/list-names">
-    My Favorite Names
-  </button>
-  <main class="main-cards">
-    <button type="button" class="main-card" routerLink="/options">
-      <img src="images/cat.png" alt="" />
-      <h2>Cat</h2>
+<div class="wrapper">
+  <div class="container">
+    @if (isModalOpen) {
+      <app-list-names (closeModal)="closeModal()"></app-list-names>
+    }
+    <button (click)="openModal()" class="favorite-names" routerLink="/list-names">
+      My Favorite Names
     </button>
-    <button class="main-card" routerLink="/options">
-      <img src="images/dog.png" alt="" />
-      <h2>Dog</h2>
-    </button>
-    <button class="main-card" routerLink="/options">
-      <img src="images/bird.png" alt="" />
-      <h2>Bird</h2>
-    </button>
-    <button class="main-card" routerLink="/options">
-      <img src="images/hamster.png" alt="" />
-      <h2>Hamster</h2>
-    </button>
-    <button class="main-card" routerLink="/options">
-      <img src="images/rabbit.png" alt="" />
-      <h2>Rabbit</h2>
-    </button>
-  </main>
+    <main class="main-cards">
+      <button type="button" class="main-card" routerLink="/options">
+        <img src="images/cat.png" alt="" />
+        <h2>Cat</h2>
+      </button>
+      <button class="main-card" routerLink="/options">
+        <img src="images/dog.png" alt="" />
+        <h2>Dog</h2>
+      </button>
+      <button class="main-card" routerLink="/options">
+        <img src="images/bird.png" alt="" />
+        <h2>Bird</h2>
+      </button>
+      <div class="bottom-row">
+        <button class="main-card" routerLink="/options">
+          <img src="images/hamster.png" alt="" />
+          <h2>Hamster</h2>
+        </button>
+        <button class="main-card" routerLink="/options">
+          <img src="images/rabbit.png" alt="" />
+          <h2>Rabbit</h2>
+        </button>
+      </div>
+    </main>
+  </div>
 </div>

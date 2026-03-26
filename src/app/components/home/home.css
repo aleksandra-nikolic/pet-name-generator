@@ -1,8 +1,15 @@
-.container {
-  height: 100vh;
+.bottom-row {
+  display: contents;
+}
+.wrapper {
   background-color: #ffd6e0;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+  height: 100vh;
   position: relative;
-  position: relative;
+  padding: 21px;
 }
 .favorite-names {
   font-family: 'Fredoka', sans-serif;
@@ -22,16 +29,18 @@
   transform: scale(1.05);
 }
 .main-cards {
-  height: calc(100vh - 21.6px);
-  display: flex;
-  gap: 24px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin: 0 auto;
   align-items: center;
-  justify-content: center;
+  max-width: fit-content;
 }
 .main-card {
   background-color: #fff0f5;
-
-  padding: 10px;
+  max-width: 200px;
+  padding: 21px;
   border: 3px solid black;
   border-radius: 16px;
   cursor: pointer;
@@ -44,4 +53,44 @@
 .main-card h2 {
   font-family: 'Fredoka', sans-serif;
   font-weight: 500;
+}
+@media (max-width: 992px) {
+  .main-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    gap: 24px;
+  }
+
+  .main-card {
+    width: 200px; /* fiksna širina kao na desktopu */
+  }
+
+  .bottom-row {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .bottom-row {
+    display: contents;
+  }
+}
+@media (max-width: 480px) {
+  .main-card {
+    width: 130px; /* ili koliko ti odgovara */
+  }
+
+  .main-card img {
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .main-card {
+    width: 120px;
+  }
 }

@@ -5,12 +5,13 @@
         (click)="onClick(); addToFavorites()"
         [ngClass]="{ clicked: isClicked }"
         type="button"
+        [disabled]="isClicked"
       >
         Add to Favorites
       </button>
     </section>
 
-    <h1>{{ randomName }}</h1>
+    <h1 class="name">{{ randomName }}</h1>
 
     <section class="againBtns">
       <button (click)="getRandomName()" class="restart">
