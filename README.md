@@ -15,7 +15,7 @@ Filter names by gender and style, save your favorites and manage your list.
 ## Technologies
 - Angular
 - TypeScript
-- HTML & CSS
+- Custom HTML & CSS (no UI library)
 
 ## Run locally
 1. Clone the repository
