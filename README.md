@@ -27,4 +27,4 @@ Filter names by gender and style, save your favorites and manage your list.
 4. Open http://localhost:4200 in your browser
 
 ## Live demo
-https://aleksandra-nikolic.netlify.app/
+https://pet-name-generator.netlify.app/
