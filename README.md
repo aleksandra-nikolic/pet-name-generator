@@ -25,3 +25,6 @@ Filter names by gender and style, save your favorites and manage your list.
 3. Start the development server
    ng serve
 4. Open http://localhost:4200 in your browser
+
+## Live demo
+https://aleksandra-nikolic.netlify.app/
