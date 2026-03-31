@@ -11,6 +11,7 @@ Filter names by gender and style, save your favorites and manage your list.
 - Save favorite names to a list
 - Delete names from favorites list
 - Favorites saved with Local Storage
+- Responsive design (mobile friendly)
 
 ## Technologies
 - Angular
